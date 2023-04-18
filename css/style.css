@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* Указываем box sizing */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 *,
 *::before,
 *::after {
@@ -79,7 +80,76 @@ select {
   }
 }
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@font-face {
+  font-family: "cursyger";
+  font-display: swap;
+  src: url("../fonts/cursyger.otf");
+  src: url("../fonts/cursyger.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blinking {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: rgb(229, 229, 229);
+  }
+}
+body {
+  background-color: #121212;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+.header__inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-content: center center;
+}
+.header__inner a {
+  font-family: "cursyger";
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: #65C8B6;
+}
+.header__block {
+  padding: 2.5rem;
+  border: 2px dashed rgb(229, 229, 229);
+  cursor: pointer;
+  transition: background-color 300ms ease-out;
+}
+.header__block:hover {
+  background-color: rgb(121, 118, 118);
+}
+
+.type-block {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  overflow: hidden;
+  border-right: 0.15em solid rgb(229, 229, 229);
+  white-space: nowrap;
+  font-family: "Press Start 2P", cursive;
+  color: #379e3c;
+  animation: typing 2.5s steps(50, end) forwards, blinking 1.2s infinite;
+  font-size: 1.6rem;
+  width: 0;
+}
+
+.type-animate {
+  display: inline-block;
 }/*# sourceMappingURL=style.css.map */

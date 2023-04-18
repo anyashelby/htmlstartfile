@@ -1,0 +1,26 @@
+.type-block {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+
+    overflow: hidden;
+    border-right: .15em solid rgb(229, 229, 229);
+    
+    white-space: nowrap;
+    font-family: 'Press Start 2P', cursive;
+    color: #379e3c;
+
+    animation: 
+        typing 2.5s steps(50, end) forwards,
+        blinking 1.2s infinite;
+    font-size: 1.6rem;
+    width: 0;
+}
+
+
+
+.type-animate {
+    display: inline-block;
+}

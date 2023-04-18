@@ -1,0 +1,29 @@
+.header {
+    
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-content: center center;
+        a {
+            font-family: 'cursyger';
+            font-size: 1.125rem;
+            
+            text-decoration: none;
+
+            color: #65C8B6;
+        }
+    }
+
+    &__block {
+        padding: 2.5rem;
+
+        border: 2px dashed rgb(229, 229, 229);
+
+        cursor: pointer;
+
+        transition: background-color 300ms ease-out;
+        &:hover {
+            background-color:rgb(121, 118, 118);
+        }
+    }
+}

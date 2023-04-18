@@ -1,8 +1,13 @@
 @import 'libs/reset';
 @import 'libs/fonts';
+@import 'libs/animate';
 @import 'base/variables';
 @import 'base/mixins';
 
+
+body {
+    background-color: #121212;
+}
 
 .container {
     max-width: 1140px; 
@@ -12,4 +17,5 @@
 
 @import 'blocks/header';
 @import 'blocks/footer';
+@import 'blocks/title';
 
